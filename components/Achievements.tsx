@@ -61,26 +61,6 @@ export const Achievements: React.FC = () => {
           {seasonTwo.map((h, i) => <AchievementCard key={`s2-${i}`} h={h} />)}
         </div>
       </div>
-      
-      <div className="mt-12 md:mt-16 p-6 md:p-8 border border-[#293657]/10 flex flex-col md:flex-row gap-8 md:gap-12 items-center bg-white/30 backdrop-blur-sm">
-         <div className="w-full md:w-1/3 text-center md:text-left">
-            <span className="font-mono text-[8px] md:text-[9px] text-[#293657]/40 uppercase tracking-widest">Efficiency Metrics</span>
-            <h3 className="text-xl md:text-2xl font-heading text-[#293657] mt-2">GANTT CONTROL</h3>
-            <p className="text-xs md:text-sm text-[#293657]/60 mt-4 leading-relaxed font-normal">
-              To address time management challenges, we deployed stylized GANTT charts tracking our progress—ensuring no back-down from any competitive challenge.
-            </p>
-         </div>
-         <div className="w-full md:w-2/3 h-32 md:h-40 bg-[#c6d2df]/30 relative border border-[#293657]/5 overflow-hidden">
-            <div className="absolute inset-0 grid grid-cols-12 pointer-events-none opacity-20">
-               {[...Array(12)].map((_, i) => <div key={i} className="border-r border-[#293657]" />)}
-            </div>
-            {/* Visual GANTT Bars */}
-            <div className="absolute top-4 left-[10%] w-[30%] h-3 md:h-4 bg-[#293657]/40 animate-pulse" />
-            <div className="absolute top-10 md:top-12 left-[25%] w-[45%] h-3 md:h-4 bg-[#293657]/60" />
-            <div className="absolute top-16 md:top-20 left-[40%] w-[50%] h-3 md:h-4 bg-[#fff9c7] neon-border-yellow" />
-            <div className="absolute top-22 md:top-28 left-[60%] w-[35%] h-3 md:h-4 bg-[#293657]/20" />
-         </div>
-      </div>
     </div>
   );
 };
