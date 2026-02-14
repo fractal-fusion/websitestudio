@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Logo } from './Logo';
+import { Logo } from './Logo.tsx';
 
 interface HeroProps {
   setView: (view: 'home' | 'evolution' | 'technical' | 'outreach' | 'contact') => void;

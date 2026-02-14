@@ -1,17 +1,17 @@
 
 import React, { useEffect, useState } from 'react';
-import { Hero } from './components/Hero';
-import { Evolution } from './components/Evolution';
-import { TechSpecs } from './components/TechSpecs';
-import { TeamCollective } from './components/TeamCollective';
-import { Outreach } from './components/Outreach';
-import { Impact } from './components/Impact';
-import { Navigation } from './components/Navigation';
-import { Achievements } from './components/Achievements';
-import { Strategy } from './components/Strategy';
-import { SWOT } from './components/SWOT';
-import { Contact } from './components/Contact';
-import { CadViewer } from './components/CadViewer';
+import { Hero } from './components/Hero.tsx';
+import { Evolution } from './components/Evolution.tsx';
+import { TechSpecs } from './components/TechSpecs.tsx';
+import { TeamCollective } from './components/TeamCollective.tsx';
+import { Outreach } from './components/Outreach.tsx';
+import { Impact } from './components/Impact.tsx';
+import { Navigation } from './components/Navigation.tsx';
+import { Achievements } from './components/Achievements.tsx';
+import { Strategy } from './components/Strategy.tsx';
+import { SWOT } from './components/SWOT.tsx';
+import { Contact } from './components/Contact.tsx';
+import { CadViewer } from './components/CadViewer.tsx';
 
 const App: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
