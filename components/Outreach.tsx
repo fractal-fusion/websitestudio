@@ -26,37 +26,36 @@ const collaborations = [
 
 export const Outreach: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 md:px-12 relative">
-      {/* Decorative Network Pulse */}
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-[#fff9c7] to-transparent animate-yellow-pulse opacity-50" />
+    <div className="max-w-7xl mx-auto px-4 md:px-12 relative mb-24 md:mb-32">
+      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-px h-16 md:h-20 bg-gradient-to-b from-[#293657] to-transparent opacity-20" />
       
-      <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-        <div className="max-w-2xl">
-          <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#293657]/40">System Integration</span>
-          <h2 className="text-4xl md:text-6xl font-heading font-bold text-[#293657] mt-4 hover-glitch cursor-default">OUTREACH_PROTO</h2>
-          <div className="h-1 w-24 bg-[#fff9c7] mt-4 neon-border-yellow" />
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 md:mb-24 gap-6 text-center md:text-left">
+        <div className="w-full">
+          <span className="font-mono text-[9px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-[#293657]/40 font-bold">System Integration</span>
+          <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#293657] mt-3 md:mt-4 uppercase tracking-tighter leading-none">OUTREACH_PROTO</h2>
+          <div className="h-1.5 w-24 md:w-32 bg-[#293657] mt-4 md:mt-6 mx-auto md:mx-0 opacity-10" />
         </div>
-        <div className="h-px flex-grow bg-gradient-to-r from-[#293657]/5 via-[#fff9c7] to-[#293657]/5 mx-8 hidden lg:block opacity-30" />
+        <div className="h-px flex-grow bg-gradient-to-r from-transparent via-[#293657]/10 to-transparent mx-8 hidden lg:block" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-16 md:mb-24">
          {collaborations.map((item, idx) => (
-           <div key={idx} className="group p-10 bg-white/60 backdrop-blur-md border border-[#293657]/5 hover:border-[#fff9c7] transition-all hover:shadow-[0_0_40px_rgba(255,249,199,0.2)] relative overflow-hidden glass-panel">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-[#fff9c7]/20 rotate-45 transform translate-x-12 -translate-y-12 transition-transform group-hover:translate-x-10 group-hover:-translate-y-10" />
-              <div className="text-[9px] font-mono text-[#293657]/50 tracking-[0.3em] mb-6 uppercase font-bold group-hover:text-[#293657] transition-colors">{item.category}</div>
-              <h3 className="text-xl font-heading font-bold text-[#293657] mb-6 group-hover:neon-yellow transition-all">{item.title}</h3>
-              <p className="text-sm text-[#293657]/60 leading-relaxed font-normal">{item.desc}</p>
-              <div className="mt-8 h-1 w-0 bg-[#fff9c7] group-hover:w-full transition-all duration-700 shadow-[0_0_10px_#fff9c7]" />
+           <div key={idx} className="group p-10 md:p-12 bg-white/40 backdrop-blur-md border border-[#293657]/5 hover:border-[#293657]/20 transition-all hover:shadow-2xl relative overflow-hidden glass-panel flex flex-col h-full min-h-[320px]">
+              <div className="absolute top-0 right-0 w-24 md:w-32 h-24 md:h-32 bg-[#293657]/5 rotate-45 transform translate-x-12 -translate-y-12 group-hover:translate-x-10 group-hover:-translate-y-10 transition-transform" />
+              <div className="text-[9px] md:text-[10px] font-mono text-[#293657]/40 tracking-[0.4em] mb-6 md:mb-8 uppercase font-black group-hover:text-[#293657] transition-colors">{item.category}</div>
+              <h3 className="text-xl md:text-2xl font-heading font-bold text-[#293657] mb-6 md:mb-8 transition-all uppercase leading-tight">{item.title}</h3>
+              <p className="text-sm md:text-base text-[#293657]/70 leading-relaxed font-light mb-8">{item.desc}</p>
+              <div className="mt-auto h-1 w-0 bg-[#293657]/20 group-hover:w-full transition-all duration-700" />
            </div>
          ))}
       </div>
 
-      <div className="glass-panel p-12 border-[#fff9c7]/10 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#fff9c7]/5 to-transparent pointer-events-none" />
-        <h4 className="font-heading text-xs text-[#293657]/60 tracking-[0.5em] mb-12 uppercase text-center font-bold">Connected_Network_Nodes</h4>
-        <div className="flex flex-wrap justify-center gap-6 relative z-10">
+      <div className="glass-panel p-8 md:p-16 border-[#293657]/10 relative overflow-hidden bg-white/20">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+        <h4 className="font-heading text-[10px] md:text-xs text-[#293657]/40 tracking-[0.5em] mb-10 md:mb-14 uppercase text-center font-black">CONNECTED_NETWORK</h4>
+        <div className="flex flex-wrap justify-center gap-3 md:gap-6 relative z-10">
            {partners.map(p => (
-             <span key={p} className="px-5 py-3 border border-[#293657]/10 font-mono text-[11px] text-[#293657] hover:bg-[#fff9c7] hover:border-[#fff9c7] hover:shadow-[0_0_15px_rgba(255,249,199,0.5)] transition-all cursor-default font-bold">
+             <span key={p} className="px-4 py-2.5 md:px-7 md:py-4 border border-[#293657]/10 bg-white/40 backdrop-blur-sm font-mono text-[9px] md:text-[12px] text-[#293657] hover:bg-[#293657] hover:text-white transition-all cursor-default font-bold uppercase tracking-widest shadow-sm">
                {p}
              </span>
            ))}

@@ -11,47 +11,37 @@ export const Hero: React.FC<HeroProps> = ({ setView }) => {
     <div className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-[#293657]">
       {/* Background with Yellow Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,249,199,0.1)_0%,transparent_70%)]" />
-      <div className="perspective-grid opacity-40" />
+      <div className="perspective-grid opacity-30 md:opacity-40" />
       
-      {/* Kinetic Energy Lines - Hidden on small screens for performance */}
-      <div className="absolute top-1/4 left-0 w-full h-px overflow-hidden opacity-20 hidden md:block">
-        <div className="kinetic-line" style={{ animationDelay: '0s' }} />
-      </div>
-      <div className="absolute top-3/4 left-0 w-full h-px overflow-hidden opacity-20 hidden md:block">
-        <div className="kinetic-line" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute inset-0 pointer-events-none border-[10px] md:border-[30px] border-[#fff9c7]/5">
+        <div className="absolute top-0 left-0 w-12 h-12 md:w-32 md:h-32 border-t-2 border-l-2 border-[#fff9c7]/20" />
+        <div className="absolute bottom-0 right-0 w-12 h-12 md:w-32 md:h-32 border-b-2 border-r-2 border-[#fff9c7]/20" />
       </div>
 
-      <div className="absolute inset-0 pointer-events-none border-[15px] md:border-[30px] border-[#fff9c7]/5">
-        <div className="absolute top-0 left-0 w-16 h-16 md:w-32 md:h-32 border-t-2 border-l-2 border-[#fff9c7]/20" />
-        <div className="absolute bottom-0 right-0 w-16 h-16 md:w-32 md:h-32 border-b-2 border-r-2 border-[#fff9c7]/20" />
-      </div>
-
-      <div className="relative z-10 px-6 max-w-7xl w-full flex flex-col items-center pt-24 pb-32">
-        <div className="mb-8 flex flex-col items-center animate-fade-in">
-           {/* Prominent SVG Logo with Aura */}
-           <div className="w-28 h-28 md:w-44 md:h-44 mb-8 md:mb-12 relative group flex items-center justify-center cursor-pointer" onClick={() => setView('home')}>
-             <div className="absolute inset-0 bg-[#fff9c7] blur-[80px] opacity-20 animate-pulse pointer-events-none" />
-             <div className="absolute inset-0 border border-[#fff9c7]/10 rounded-full scale-125 group-hover:scale-150 transition-transform duration-1000" />
-             <Logo neon className="w-full h-full relative z-10 transition-transform duration-700 group-hover:rotate-6" />
+      <div className="relative z-10 px-6 max-w-7xl w-full flex flex-col items-center pt-20 pb-32">
+        <div className="mb-6 md:mb-8 flex flex-col items-center animate-fade-in">
+           <div className="w-24 h-24 md:w-44 md:h-44 mb-6 md:mb-12 relative group flex items-center justify-center cursor-pointer" onClick={() => setView('home')}>
+             <div className="absolute inset-0 bg-[#fff9c7] blur-[40px] md:blur-[80px] opacity-10 md:opacity-20 animate-pulse pointer-events-none" />
+             <div className="absolute inset-0 border border-[#fff9c7]/10 rounded-full scale-110 md:scale-125 transition-transform duration-1000" />
+             <Logo neon className="w-full h-full relative z-10" />
            </div>
 
-           <div className="px-4 py-1 bg-[#fff9c7] text-[#293657] font-heading text-[9px] md:text-[11px] tracking-[0.4em] uppercase shadow-[0_0_20px_rgba(255,249,199,0.4)] border border-white/20 font-bold">
+           <div className="px-4 py-1 bg-[#fff9c7] text-[#293657] font-heading text-[8px] md:text-[11px] tracking-[0.4em] uppercase shadow-[0_0_20px_rgba(255,249,199,0.4)] border border-white/20 font-bold">
              TEAM 27188 • FTC 2024-2025
            </div>
-           <div className="h-6 md:h-12 w-px bg-gradient-to-b from-[#fff9c7] to-transparent mt-4 opacity-50" />
+           <div className="h-4 md:h-12 w-px bg-gradient-to-b from-[#fff9c7] to-transparent mt-4 opacity-30 md:opacity-50" />
         </div>
         
-        <h1 className="text-4xl sm:text-6xl md:text-[9rem] lg:text-[11rem] font-heading font-black tracking-tighter mb-6 leading-[0.9] select-none text-white hover-glitch cursor-default">
+        <h1 className="text-4xl sm:text-6xl md:text-[9rem] lg:text-[11rem] font-heading font-black tracking-tighter mb-4 md:mb-6 leading-[0.9] select-none text-white cursor-default">
           <span className="chrome-text neon-yellow">FRACTAL</span><br />
           <span className="chrome-text neon-yellow">FUSION</span>
         </h1>
         
-        <p className="max-w-4xl mx-auto text-sm md:text-2xl text-white/70 font-normal tracking-[0.2em] md:tracking-[0.3em] uppercase mb-12 md:mb-20 px-4 leading-relaxed">
-          “FUSING the future, one <span className="inline-block bg-[#fff9c7] text-[#293657] px-2 md:px-3 py-0.5 mx-1 font-bold shadow-[0_0_20px_rgba(255,249,199,0.6)] align-middle leading-tight">BUILD</span> at a time”
+        <p className="max-w-4xl mx-auto text-[10px] md:text-2xl text-white/70 font-normal tracking-[0.2em] md:tracking-[0.3em] uppercase mb-10 md:mb-20 px-4 leading-relaxed">
+          “FUSING the future, one <span className="inline-block bg-[#fff9c7] text-[#293657] px-2 md:px-3 py-0.5 mx-1 font-bold shadow-[0_0_20px_rgba(255,249,199,0.6)] align-middle">BUILD</span> at a time”
         </p>
         
-        {/* Navigation Prominent Links */}
-        <div className="flex flex-wrap gap-6 md:gap-16 justify-center items-center w-full max-w-5xl px-4">
+        <div className="flex flex-wrap gap-4 md:gap-16 justify-center items-center w-full max-w-5xl px-4">
           {(['evolution', 'technical', 'outreach', 'contact'] as const).map((v) => (
             <a 
               key={v}
@@ -59,18 +49,17 @@ export const Hero: React.FC<HeroProps> = ({ setView }) => {
               onClick={(e) => { e.preventDefault(); setView(v); }}
               className="group relative flex flex-col items-center"
             >
-              <span className="text-xs md:text-lg font-mono font-black tracking-[0.3em] md:tracking-[0.5em] uppercase text-[#fff9c7] transition-all group-hover:neon-yellow group-hover:scale-110">
+              <span className="text-[10px] md:text-lg font-mono font-black tracking-[0.2em] md:tracking-[0.5em] uppercase text-[#fff9c7] transition-all group-hover:neon-yellow">
                 {v}
               </span>
-              <span className="mt-2 md:mt-4 h-0.5 bg-[#fff9c7] w-0 group-hover:w-full transition-all duration-500 shadow-[0_0_15px_#fff9c7]" />
+              <span className="mt-1 md:mt-4 h-0.5 bg-[#fff9c7] w-0 group-hover:w-full transition-all duration-500 shadow-[0_0_15px_#fff9c7]" />
             </a>
           ))}
         </div>
       </div>
 
-      {/* Marquee Ticker */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-[#fff9c7]/20 py-4 md:py-5 bg-black/40 backdrop-blur-lg z-20">
-        <div className="flex gap-12 md:gap-24 whitespace-nowrap animate-marquee font-mono text-[8px] md:text-[10px] text-[#fff9c7] font-bold uppercase tracking-[0.3em]">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-[#fff9c7]/20 py-3 md:py-5 bg-black/60 backdrop-blur-sm z-20">
+        <div className="flex gap-12 md:gap-24 whitespace-nowrap animate-marquee font-mono text-[7px] md:text-[10px] text-[#fff9c7] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em]">
           <span>INTO THE DEEP 2024</span>
           <span>●</span>
           <span>AUTONOMOUS SPEED: MAX</span>
@@ -99,14 +88,14 @@ export const Hero: React.FC<HeroProps> = ({ setView }) => {
           100% { transform: translateX(-50%); }
         }
         .animate-marquee {
-          animation: marquee 30s linear infinite;
+          animation: marquee 25s linear infinite;
         }
         @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
+          from { opacity: 0; transform: translateY(15px); }
           to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in {
-          animation: fade-in 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+          animation: fade-in 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
         }
       `}</style>
     </div>
