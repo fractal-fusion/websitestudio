@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Gallery } from './Gallery.tsx';
 
 const mentors = [
   { name: "Mr. Whitfield", label: "C" },
@@ -20,7 +21,7 @@ const team = [
 export const TeamCollective: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-12">
-      <div className="text-center mb-16">
+      <div className="text-center mb-10 md:mb-16">
         <div className="inline-block px-4 py-1 bg-[#293657] text-[#fff9c7] font-mono text-[9px] tracking-[0.4em] uppercase font-bold mb-4">
           PERSONNEL_DATABASE_ACTIVE
         </div>
@@ -28,6 +29,11 @@ export const TeamCollective: React.FC = () => {
         <div className="flex justify-center mt-4 space-x-2">
            {[...Array(13)].map((_, i) => <div key={i} className="w-1.5 h-6 bg-[#293657]/10" />)}
         </div>
+      </div>
+
+      {/* Embedded Photo Slideshow */}
+      <div className="mb-16 md:mb-24">
+        <Gallery />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">

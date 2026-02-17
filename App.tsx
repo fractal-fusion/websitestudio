@@ -16,7 +16,8 @@ const App: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
   const [view, setView] = useState<'home' | 'evolution' | 'technical' | 'outreach' | 'contact'>('home');
 
-  const teamPhotoId = "1j8iya9KQCSkB-RRqr8pa0frBdv0Ick55";
+  // Updated to the specific Google Drive image provided by the user
+  const teamPhotoId = "1RAKV-0oTRKqLcadfL7w3eVXr-HFAeXKd";
   const teamPhotoUrl = `https://drive.google.com/thumbnail?id=${teamPhotoId}&sz=w1200`;
 
   useEffect(() => {
@@ -65,13 +66,17 @@ const App: React.FC = () => {
                   </p>
                 </div>
                 <div className="relative group w-full">
-                  <div className="glass-panel p-2 border-2 border-[#293657]/10 relative overflow-hidden transition-all duration-700 shadow-[0_30px_60px_-15px_rgba(41,54,87,0.3)]">
+                  <div className="glass-panel p-2 border-2 border-[#293657]/10 relative overflow-hidden transition-all duration-700 shadow-[0_30px_60px_-15px_rgba(41,54,87,0.3)] hover:scale-[1.01]">
                     <div className="absolute inset-0 bg-[#293657]/5 pointer-events-none z-10" />
                     <div className="relative aspect-[3/2] overflow-hidden bg-[#293657] border border-[#293657]/5">
                       <img 
                         src={teamPhotoUrl} 
-                        alt="Team 27188 Collective" 
-                        className="w-full h-full object-cover object-top filter brightness-105 contrast-110 saturate-[0.9]"
+                        alt="Team 27188 Genesis" 
+                        className="w-full h-full object-cover object-center filter brightness-105 contrast-110 saturate-[0.95]"
+                        onError={(e) => {
+                          // Fallback if Google Drive thumbnail fails to load
+                          (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200";
+                        }}
                       />
                       <div className="absolute inset-0 pointer-events-none flex flex-col justify-between p-4 md:p-8 z-20">
                         <div className="flex justify-between items-start">
@@ -100,7 +105,7 @@ const App: React.FC = () => {
             <section id="achievements" className="py-12 md:py-24 bg-[#293657]/5 border-b border-[#293657]/10">
               <Achievements />
             </section>
-            <section id="team" className="py-12 md:py-24 bg-[#c6d2df]/20 relative overflow-hidden">
+            <section id="team" className="py-12 md:py-24 bg-[#c6d2df]/20 relative overflow-hidden border-b border-[#293657]/5">
               <TeamCollective />
             </section>
           </div>
@@ -166,7 +171,6 @@ const App: React.FC = () => {
 
   return (
     <div className="relative min-h-screen selection:bg-[#293657] selection:text-white font-normal overflow-x-hidden">
-      {/* HUD Overlays - Reduced complexity for mobile */}
       <div className="scanline" />
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-20 right-[-5%] w-64 md:w-96 h-64 md:h-96 bg-[#c6d2df]/20 blur-[60px] md:blur-[100px] rounded-full" />
