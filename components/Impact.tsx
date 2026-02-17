@@ -2,7 +2,6 @@
 import React from 'react';
 
 const sponsors = [
-  { name: "GreenSea IQ", detail: "Intelligent Ocean Solutions" },
   { name: "Gene Haas Foundation", detail: "Precision Engineering Support" },
   { name: "Donors & Grants", detail: "Community Backed" }
 ];

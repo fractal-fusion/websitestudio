@@ -27,7 +27,7 @@ export const Hero: React.FC<HeroProps> = ({ setView }) => {
            </div>
 
            <div className="px-4 py-1 bg-[#fff9c7] text-[#293657] font-heading text-[8px] md:text-[11px] tracking-[0.4em] uppercase shadow-[0_0_20px_rgba(255,249,199,0.4)] border border-white/20 font-bold">
-             TEAM 27188 • FTC 2024-2025
+             TEAM 27188 • FTC 2024–2026 AND BEYOND
            </div>
            <div className="h-4 md:h-12 w-px bg-gradient-to-b from-[#fff9c7] to-transparent mt-4 opacity-30 md:opacity-50" />
         </div>
@@ -37,9 +37,25 @@ export const Hero: React.FC<HeroProps> = ({ setView }) => {
           <span className="chrome-text neon-yellow">FUSION</span>
         </h1>
         
-        <p className="max-w-4xl mx-auto text-[10px] md:text-2xl text-white/70 font-normal tracking-[0.2em] md:tracking-[0.3em] uppercase mb-10 md:mb-20 px-4 leading-relaxed">
-          “FUSING the future, one <span className="inline-block bg-[#fff9c7] text-[#293657] px-2 md:px-3 py-0.5 mx-1 font-bold shadow-[0_0_20px_rgba(255,249,199,0.6)] align-middle">BUILD</span> at a time”
-        </p>
+        <div className="mb-10 md:mb-16">
+          <p className="max-w-4xl mx-auto text-[10px] md:text-2xl text-white/70 font-normal tracking-[0.2em] md:tracking-[0.3em] uppercase px-4 leading-relaxed mb-6 md:mb-10">
+            “FUSING the future, one <span className="inline-block bg-[#fff9c7] text-[#293657] px-2 md:px-3 py-0.5 mx-1 font-bold shadow-[0_0_20px_rgba(255,249,199,0.6)] align-middle">BUILD</span> at a time”
+          </p>
+          
+          {/* Main Sponsor Feature */}
+          <div className="flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex items-center gap-4">
+              <div className="h-px w-6 md:w-16 bg-[#fff9c7]/20" />
+              <span className="font-mono text-[7px] md:text-[10px] text-[#fff9c7]/40 tracking-[0.5em] uppercase">Principal Partner</span>
+              <div className="h-px w-6 md:w-16 bg-[#fff9c7]/20" />
+            </div>
+            <div className="group relative">
+               <span className="text-xl md:text-4xl font-heading font-bold text-[#fff9c7] neon-yellow tracking-widest uppercase transition-all duration-500 hover:tracking-[0.5em]">GreenSea IQ</span>
+               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#fff9c7]/30 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
+            </div>
+            <span className="font-mono text-[6px] md:text-[9px] text-[#fff9c7]/30 italic tracking-widest uppercase mt-1">"Intelligent Ocean Solutions"</span>
+          </div>
+        </div>
         
         <div className="flex flex-wrap gap-4 md:gap-16 justify-center items-center w-full max-w-5xl px-4">
           {(['evolution', 'technical', 'outreach', 'contact'] as const).map((v) => (

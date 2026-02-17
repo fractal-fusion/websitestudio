@@ -9,13 +9,15 @@ import { Impact } from './components/Impact.tsx';
 import { Navigation } from './components/Navigation.tsx';
 import { Achievements } from './components/Achievements.tsx';
 import { Strategy } from './components/Strategy.tsx';
-import { SWOT } from './components/SWOT.tsx';
 import { Contact } from './components/Contact.tsx';
 import { CadViewer } from './components/CadViewer.tsx';
 
 const App: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
   const [view, setView] = useState<'home' | 'evolution' | 'technical' | 'outreach' | 'contact'>('home');
+
+  const teamPhotoId = "1j8iya9KQCSkB-RRqr8pa0frBdv0Ick55";
+  const teamPhotoUrl = `https://drive.google.com/thumbnail?id=${teamPhotoId}&sz=w1200`;
 
   useEffect(() => {
     let ticking = false;
@@ -52,7 +54,7 @@ const App: React.FC = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
                 <div className="space-y-8 md:space-y-10 text-center lg:text-left flex flex-col items-center lg:items-start">
                   <div className="inline-block px-4 py-1 bg-[#293657] text-[#fff9c7] font-mono text-[9px] md:text-[10px] tracking-[0.3em] uppercase">
-                    Mission Log: 2024–2025
+                    Mission Log: 2024–2026+
                   </div>
                   <h2 className="font-heading font-bold text-[#293657] flex flex-col items-center lg:items-start gap-1 md:gap-2">
                     <span className="opacity-40 text-xl md:text-3xl tracking-widest">THE</span>
@@ -62,8 +64,33 @@ const App: React.FC = () => {
                     Founded in the <span className="font-bold text-[#293657]">INTO THE DEEP</span> season, Team 27188 consists of 13 dedicated students. Our culture thrives on exploration—tackling challenges head-on to expand our collective knowledge.
                   </p>
                 </div>
-                <div className="relative flex justify-center items-center h-[300px] md:h-[500px]">
-                  <SWOT />
+                <div className="relative group w-full">
+                  <div className="glass-panel p-2 border-2 border-[#293657]/10 relative overflow-hidden transition-all duration-700 shadow-[0_30px_60px_-15px_rgba(41,54,87,0.3)]">
+                    <div className="absolute inset-0 bg-[#293657]/5 pointer-events-none z-10" />
+                    <div className="relative aspect-[3/2] overflow-hidden bg-[#293657] border border-[#293657]/5">
+                      <img 
+                        src={teamPhotoUrl} 
+                        alt="Team 27188 Collective" 
+                        className="w-full h-full object-cover object-top filter brightness-105 contrast-110 saturate-[0.9]"
+                      />
+                      <div className="absolute inset-0 pointer-events-none flex flex-col justify-between p-4 md:p-8 z-20">
+                        <div className="flex justify-between items-start">
+                          <div className="w-6 h-6 md:w-12 md:h-12 border-t-2 border-l-2 border-[#fff9c7]/60" />
+                          <div className="w-6 h-6 md:w-12 md:h-12 border-t-2 border-r-2 border-[#fff9c7]/60" />
+                        </div>
+                        <div className="flex justify-between items-end">
+                          <div className="w-6 h-6 md:w-12 md:h-12 border-b-2 border-l-2 border-[#fff9c7]/60" />
+                          <div className="px-2 py-0.5 md:px-4 md:py-1 bg-[#293657]/90 backdrop-blur-md border border-[#fff9c7]/30 text-[#fff9c7] font-mono text-[6px] md:text-[8px] tracking-[0.4em] uppercase font-bold shadow-lg">
+                            UNIT_SYNC_27188
+                          </div>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#fff9c7]/5 to-transparent h-1/4 -top-full animate-scanline pointer-events-none z-30 opacity-40" />
+                    </div>
+                  </div>
+                  <div className="mt-4 font-mono text-[7px] md:text-[9px] text-[#293657]/40 tracking-widest uppercase text-center md:text-right">
+                    OBJECT_ID: FRACTAL_SQUAD_27188 // STATUS: ACTIVE
+                  </div>
                 </div>
               </div>
             </section>
@@ -135,7 +162,7 @@ const App: React.FC = () => {
       default:
         return null;
     }
-  }, [view]);
+  }, [view, teamPhotoUrl]);
 
   return (
     <div className="relative min-h-screen selection:bg-[#293657] selection:text-white font-normal overflow-x-hidden">
