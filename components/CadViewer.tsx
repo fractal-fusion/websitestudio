@@ -6,7 +6,7 @@ export const CadViewer: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   
   const fileId = "1Tk3uWxTua_CLCcF_xOEWMFOyf6uDDuxU";
-  const onshapeUrl = "https://cad.onshape.com/documents/2cea3088e7748a63a0e2803e/w/f7afa4c258cf68b11e7e6f04/e/30e8bac273c8dc57ae8d5697/embed";
+  const onshapeUrl = "https://cad.onshape.com/documents/2cea3088e7748a63a0e2803e/w/f7afa4c258cf68b11e7e6f04/e/30e8bac273c8dc57ae8d5697?renderMode=0&uiState=6991d47b372314fe5c9dcdf2/embed";
   const gifUrl = `https://drive.google.com/thumbnail?id=${fileId}&sz=w1200`;
 
   useEffect(() => {
