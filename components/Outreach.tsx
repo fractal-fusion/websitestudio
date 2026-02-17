@@ -21,6 +21,16 @@ const collaborations = [
     category: "GLOBAL_FUSION",
     title: "13201 Team Hazmat",
     desc: "Collaborated with Wisconsin-based Hazmat and FTC Vietnam 25152 to share personal experiences.",
+  },
+  {
+    category: "LIVE_DEPLOYMENT",
+    title: "SpaceCom 2026",
+    desc: "Engaged with space, cyber, and U.S. Navy professionals on Jan 30th to advocate for FIRST and its global impact.",
+  },
+  {
+    category: "STEM_ENGAGEMENT",
+    title: "SPARKfest 2026",
+    desc: "Attended Orlando Science Center on Feb 14th to teach children robot driving skills and inspire families through FIRST.",
   }
 ];
 
@@ -38,9 +48,9 @@ export const Outreach: React.FC = () => {
         <div className="h-px flex-grow bg-gradient-to-r from-transparent via-[#293657]/10 to-transparent mx-8 hidden lg:block" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-16 md:mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mb-16 md:mb-24">
          {collaborations.map((item, idx) => (
-           <div key={idx} className="group p-10 md:p-12 bg-white/40 backdrop-blur-md border border-[#293657]/5 hover:border-[#293657]/20 transition-all hover:shadow-2xl relative overflow-hidden glass-panel flex flex-col h-full min-h-[320px]">
+           <div key={idx} className="group p-10 md:p-12 bg-white/40 backdrop-blur-md border border-[#293657]/5 hover:border-[#293657]/20 transition-all hover:shadow-2xl relative overflow-hidden glass-panel flex flex-col h-full min-h-[280px]">
               <div className="absolute top-0 right-0 w-24 md:w-32 h-24 md:h-32 bg-[#293657]/5 rotate-45 transform translate-x-12 -translate-y-12 group-hover:translate-x-10 group-hover:-translate-y-10 transition-transform" />
               <div className="text-[9px] md:text-[10px] font-mono text-[#293657]/40 tracking-[0.4em] mb-6 md:mb-8 uppercase font-black group-hover:text-[#293657] transition-colors">{item.category}</div>
               <h3 className="text-xl md:text-2xl font-heading font-bold text-[#293657] mb-6 md:mb-8 transition-all uppercase leading-tight">{item.title}</h3>
