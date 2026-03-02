@@ -16,7 +16,7 @@ const seasonTwo = [
   { year: '2025', event: 'Meet 3', rank: '15 Artifacts' },
   { year: '2026', event: 'League Champs', rank: 'Winning Alliance Capt.' },
   { year: '2026', event: 'Design Award', rank: '2nd Place' },
-  { year: '2026', event: 'State Champ', rank: 'Qualified' },
+  { year: '2026', event: 'State Champ', rank: 'Loading...' },
 ];
 
 export const Achievements: React.FC = () => {
