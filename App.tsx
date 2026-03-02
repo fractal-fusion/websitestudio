@@ -62,7 +62,7 @@ const App: React.FC = () => {
                     <span className="text-4xl md:text-7xl bg-[#fff9c7] px-3 md:px-5 py-2 shadow-[0_0_20px_rgba(255,249,199,0.4)]">GENESIS</span>
                   </h2>
                   <p className="text-base md:text-xl text-[#293657]/80 leading-relaxed font-light max-w-xl">
-                    Fractal Fusion was founded in the 2024–2025 <span className="font-bold text-[#293657]">Into the Deep</span> season and is made up of 13 passionate students who work hard to perform their best no matter the challenge. We aim to grow and expand our knowledge every single day. Beyond competition, Fractal Fusion is committed to spreading STEM through outreach and mentorship, proving that excellence isn’t random—it’s built into our pattern.
+                    Fractal Fusion was founded in the 2024–2025 <span className="font-bold text-[#293657]">Into the Deep</span> season and is made up of 13 passionate students who work hard to perform their best no matter the challenge. We aim to grow and expand our knowledge every single day. Beyond competition, Fractal Fusion is committed to spreading STEM through outreach and mentorship, proving that excellence isn’t random—it’s <span className="font-bold text-[#293657]">built into our pattern</span>.
                   </p>
                 </div>
                 <div className="relative group w-full">
