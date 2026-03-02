@@ -5,20 +5,20 @@ const techItems = [
   {
     category: "PROGRAMMING_CORE",
     title: "PEDRO_PATHING",
-    desc: "Advanced path follower emphasizing speed over time consistency for hyper-efficient navigation.",
-    features: ["Autonomous Logic", "Precision Strafe", "Path Visualizer"]
+    desc: "Java path follower emphasizing speed and efficiency over time consistency for rapid navigation.",
+    features: ["Autonomous FSM", "Visualizer Planning", "Path Manipulation"]
   },
   {
     category: "HARDWARE_VISION",
     title: "LIMELIGHT_AI",
-    desc: "Integrated April-Tag tracking powering proportional heading control and auto-alignment.",
-    features: ["Target Bearing", "Auto-Align FSM", "Field Centric Hub"]
+    desc: "Integrated April-Tag tracking powering proportional heading control and field localization.",
+    features: ["Target Bearing", "Auto-Align FSM", "April-Tag Detection"]
   },
   {
     category: "CONTROL_SYSTEMS",
     title: "CUSTOM_PID",
-    desc: "Carefully tuned PID controllers for high-velocity shooters and defense-mode grounding.",
-    features: ["Quartic Regression", "Indicator Lights", "Velocity Stabilization"]
+    desc: "Tuned PID controllers and quartic regression for automatic power adjustment and stabilization.",
+    features: ["Quartic Regression", "Indicator Feedback", "Velocity Control"]
   }
 ];
 

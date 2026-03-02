@@ -2,20 +2,18 @@
 import React from 'react';
 
 const incomeItems = [
+  { name: "GreenSea IQ", amount: "$300" },
   { name: "Gene Haas", amount: "$2000" },
-  { name: "Donations", amount: "$2100" },
-  { name: "Previous Money", amount: "$750" },
-  { name: "Green Sea IQ", amount: "$300" }
+  { name: "Team Donations", amount: "$1950" },
+  { name: "2024-24 Balance", amount: "$750" }
 ];
 
 const expenseItems = [
-  { name: "goBuilda", amount: "$1410.09" },
-  { name: "Registration Fee", amount: "$325" },
-  { name: "REV", amount: "$330.25" },
-  { name: "Swyft", amount: "$249.95" },
-  { name: "Axon Robotics", amount: "$179.98" },
-  { name: "Amazon", amount: "$36.25" },
-  { name: "AndyMark", amount: "$15" }
+  { name: "Comp. Fees", amount: "$325" },
+  { name: "Robot Fees", amount: "$2200" },
+  { name: "Other Costs", amount: "$200" },
+  { name: "goBilda", amount: "$315.35" },
+  { name: "REV", amount: "$330.25" }
 ];
 
 export const Finance: React.FC = () => {
@@ -33,11 +31,11 @@ export const Finance: React.FC = () => {
         <div className="grid grid-cols-2 gap-8">
           <div className="p-8 border-l-4 border-[#fff9c7] bg-[#293657] text-[#fff9c7] shadow-xl">
             <span className="font-mono text-[9px] uppercase tracking-widest opacity-50 font-bold">Total_Income</span>
-            <div className="text-4xl font-heading font-bold mt-2">$5150</div>
+            <div className="text-4xl font-heading font-bold mt-2">$5000</div>
           </div>
           <div className="p-8 border-l-4 border-[#293657] bg-white shadow-sm">
             <span className="font-mono text-[9px] uppercase tracking-widest text-[#293657]/50 font-bold">Total_Expenses</span>
-            <div className="text-4xl font-heading font-bold mt-2 text-[#293657]">$2583</div>
+            <div className="text-4xl font-heading font-bold mt-2 text-[#293657]">$3355.75</div>
           </div>
         </div>
       </div>
@@ -74,7 +72,7 @@ export const Finance: React.FC = () => {
          <div className="pt-8 border-t border-[#293657]/20">
             <div className="flex justify-between items-center px-4 py-4 bg-[#293657] text-[#fff9c7] shadow-lg">
                <span className="font-heading text-sm tracking-widest">NET_BALANCE</span>
-               <span className="text-3xl font-heading font-bold">$2567</span>
+               <span className="text-3xl font-heading font-bold">$1644.25</span>
             </div>
          </div>
       </div>

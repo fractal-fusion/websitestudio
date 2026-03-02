@@ -195,10 +195,13 @@ const App: React.FC = () => {
             <a href="https://orlandoscience.org/highschool/" target="_blank" rel="noopener noreferrer" className="hover:text-[#293657] transition-colors">ORLANDO SCIENCE</a>
           </div>
           <div className="text-center md:text-right">
-             <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-[#293657] text-[#fff9c7] font-mono text-[7px] md:text-[9px] font-bold tracking-[0.1em] md:tracking-[0.2em]">
-              <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_#4ade80]" />
-              FUSION CORE_CONNECTED
-             </div>
+              <div className="inline-flex flex-col items-end gap-1 px-3 py-1.5 md:px-4 md:py-2 bg-[#293657] text-[#fff9c7] font-mono text-[7px] md:text-[9px] font-bold tracking-[0.1em] md:tracking-[0.2em]">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_#4ade80]" />
+                  FUSION CORE_CONNECTED
+                </div>
+                <div className="opacity-50 text-[6px] md:text-[8px]">2000+ REACHED // 16300+ VIEWS</div>
+              </div>
           </div>
         </div>
       </footer>

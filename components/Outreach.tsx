@@ -2,35 +2,41 @@
 import React from 'react';
 
 const partners = [
-  "24085 Short Circuit", "22012 Loose Screws", "17288 Rubber Bandits", 
-  "20344 Cattle Bots", "15065 A Byte Irrational", "5070 NUTS"
+  "5070 N.U.T.S", "15065 A Byte Irrational", "17288 Rubber Bandits", 
+  "20344 Cattlebots", "22012 Loose Screws", "24084 Short Circuits",
+  "33889 Quantum Hive", "32464 Homeschool Homies"
 ];
 
 const collaborations = [
   {
     category: "VIDEO_LINK",
     title: "19954 Mario's Mechanics",
-    desc: "Showcased our robot and discussed strategic experiences via virtual video conferencing.",
+    desc: "Showcased our robot and design process, learning from their seasonal management experiences.",
   },
   {
     category: "SYSTEM_SETUP",
     title: "30338 MetalBeaks",
-    desc: "Our lead programmer provided support to help setup their PedroPathing implementation.",
+    desc: "Our lead programmer mentored the MetalBeaks to effectively set up their PedroPathing implementation.",
   },
   {
     category: "GLOBAL_FUSION",
     title: "13201 Team Hazmat",
-    desc: "Collaborated with Wisconsin-based Hazmat and FTC Vietnam 25152 to share personal experiences.",
+    desc: "Connected with Wisconsin-based Hazmat and FTC Vietnam 25152 to exchange strategic insights.",
   },
   {
     category: "LIVE_DEPLOYMENT",
     title: "SpaceCom 2026",
-    desc: "Engaged with space, cyber, and U.S. Navy professionals on Jan 30th to advocate for FIRST and its global impact.",
+    desc: "Engaged with aerospace and cybersecurity professionals on Jan 30th to advocate for STEM and FIRST.",
   },
   {
     category: "STEM_ENGAGEMENT",
     title: "SPARKfest 2026",
-    desc: "Attended Orlando Science Center on Feb 14th to teach children robot driving skills and inspire families through FIRST.",
+    desc: "Showcased our robot at Orlando Science Center on Feb 14th, teaching children to drive and inspire interest.",
+  },
+  {
+    category: "MENTORSHIP_NODE",
+    title: "33889 Quantum Hive & 32464 Homeschool Homies",
+    desc: "Mentored through their programming pathway, assisting with drivetrain motor configuration, wiring, and odometry tuning.",
   }
 ];
 

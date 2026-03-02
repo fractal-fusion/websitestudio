@@ -11,12 +11,12 @@ const seasonOne = [
 ];
 
 const seasonTwo = [
-  { year: '2025', event: 'Meet 1', rank: '1st Place' },
-  { year: '2025', event: 'Meet 2', rank: '1st Place' },
-  { year: '2025', event: 'Meet 3', rank: '1st Place' },
+  { year: '2025', event: 'EPA Rating', rank: '148.12 Total' },
+  { year: '2025', event: 'OPR Rating', rank: '154.72' },
+  { year: '2025', event: 'Meet 3', rank: '15 Artifacts' },
   { year: '2026', event: 'League Champs', rank: 'Winning Alliance Capt.' },
   { year: '2026', event: 'Design Award', rank: '2nd Place' },
-  { year: '2026', event: 'State Champ', rank: 'Loading...' },
+  { year: '2026', event: 'State Champ', rank: 'Qualified' },
 ];
 
 export const Achievements: React.FC = () => {

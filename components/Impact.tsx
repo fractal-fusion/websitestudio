@@ -27,7 +27,7 @@ export const Impact: React.FC = () => {
             </div>
             
             <p className="text-lg md:text-2xl text-white/80 leading-relaxed font-light max-w-xl mx-auto lg:mx-0">
-              Our next objective: <span className="text-[#fff9c7] font-bold underline decoration-2 underline-offset-8 uppercase">EXPANSION</span>. We are forging strategic alliances to fuel our 2026 technical roadmap.
+              Our impact: <span className="text-[#fff9c7] font-bold underline decoration-2 underline-offset-8 uppercase">2000+ REACHED</span>. We have connected with 12+ teams and generated 16300+ views on social platforms.
             </p>
             
             <div className="space-y-8 md:space-y-12">

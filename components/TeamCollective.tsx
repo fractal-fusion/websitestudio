@@ -5,7 +5,7 @@ import { Gallery } from './Gallery.tsx';
 const mentors = [
   { name: "Mr. Whitfield", label: "C" },
   { name: "Mr. Silvestri", label: "C" },
-  { name: "Akshat R.", label: "M" }
+  { name: "Akshat Rao", label: "M" }
 ];
 const leads = [
   { role: "Mechanical", name: "Huy N." },
@@ -13,9 +13,9 @@ const leads = [
   { role: "Business", name: "Yashmita C." }
 ];
 const team = [
-  { sub: "Mechanical", members: ["Gabriel C.", "Avyahn S.", "Aidan L."] },
-  { sub: "Software", members: ["Andrew C.", "Nathan L.", "Chandan K."] },
-  { sub: "Business", members: ["Aarika R.", "Saharsh V.", "Diya S.", "Zihan L."] }
+  { sub: "Mechanical", members: ["Gabriel C.", "Aidan L.", "Avyahn S."] },
+  { sub: "Software", members: ["Andrew Chai", "Chandan K.", "Nathan L."] },
+  { sub: "Business", members: ["Aarika R.", "Diya S.", "Saharsh V.", "Zihan L."] }
 ];
 
 export const TeamCollective: React.FC = () => {

@@ -4,18 +4,18 @@ import React from 'react';
 const strategies = [
   {
     title: "AUTONOMOUS",
-    logic: ["Fast/Precise scoring", "Alliance coordination", "Movement ranking focus"],
-    desc: "Coordinate with partners to exit scoring zones and maximize early point potential."
+    logic: ["Speed and Precision", "15 Ball Auto Routine", "Leave Point RP"],
+    desc: "Prioritize speed and precision over time consistency to shoot maximum balls in minimum time."
   },
   {
     title: "TELE-OP",
-    logic: ["Intake from stations", "Close-zone efficiency", "Adaptive far-zone scoring"],
-    desc: "Intake artifacts from the opposing alliance STATION for hyper-fast cycle times."
+    logic: ["Close Shooting Focus", "Field-Centric Drive", "Auto-Alignment"],
+    desc: "Utilize field-centric driving and automatic alignment for rapid cycles and high-efficiency scoring."
   },
   {
     title: "ENDGAME",
-    logic: ["Score overflow", "Pattern completion", "Base zone parking"],
-    desc: "Small and agile robot footprint allows for rapid base-zone parking in final 20 seconds."
+    logic: ["Motif Collection", "Full Park Guarantee", "Alliance Support"],
+    desc: "Prioritize getting motifs and ensuring a full park in the base zone during the final 10 seconds."
   }
 ];
 

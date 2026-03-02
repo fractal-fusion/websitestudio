@@ -4,23 +4,23 @@ import React from 'react';
 const iterations = [
   {
     version: "V1",
-    name: "PROTO_ALPHA",
-    pros: ["Easy reconstruct", "Light weight", "Fast drivetrain"],
-    cons: ["Fragile guards", "Slow shooting", "Artifact jamming"],
+    name: "PROTO_INTAKE",
+    pros: ["Boot wheel intake", "Symmetrical guides", "1150 RPM motor"],
+    cons: ["Deadzone stalling", "Couldn't intake 3 balls", "Lack of durability"],
     accent: "border-[#293657]"
   },
   {
     version: "V2",
-    name: "REFINE_BETA",
-    pros: ["Rigid side plates", "Wider intake", "Goal tracking"],
-    cons: ["Holds >3 artifacts", "Close shot only", "Slow repair"],
+    name: "REFINE_OUTTAKE",
+    pros: ["Fixed hood design", "60A Polyurethane wheels", "0.5s close burst"],
+    cons: ["Limited close shots", "Battery voltage dependent", "Bounce-outs"],
     accent: "border-[#c6d2df]"
   },
   {
     version: "V3",
-    name: "ROSIE!",
-    pros: ["Full width intake", "Rapid shooting", "No artifact jams"],
-    cons: ["Lengthy 3D parts", "Cannot spindex", "High force nodes"],
+    name: "FINAL_ROSIE",
+    pros: ["15.5\" wide intake", "Steel flywheels", "Adjustable hood"],
+    cons: ["High mechanical complexity", "Requires precise tuning", "Lengthy 3D prints"],
     accent: "border-[#fff9c7] neon-border-yellow"
   }
 ];
